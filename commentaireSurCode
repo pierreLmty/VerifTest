@@ -1,0 +1,20 @@
+protected URI parseIntoURI(String uri)
+	// Methode trop longue (300 lignes)
+
+protected void setValue(String base, String path, boolean encode)
+	// Methode trop longue (200 lignes)
+
+protected void setValue(String path)
+	// Methode trop longue (200 lignes)
+
+
+protected URI intern(boolean isExclusive, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, int hashCode)
+	// trop grand nombre d'argument
+
+protected Hierarchical(int hashCode, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
+	// trop grand nombre d'argument
+
+
+stringArraySegmentsAndSubsegmentAccessUnit.setValue(hashCode, segments, segmentCount, segment, offset, count, segmentHashCode);
+	// variable trop longue
+	// trop d'argument
