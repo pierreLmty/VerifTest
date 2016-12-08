@@ -1,20 +1,122 @@
-protected URI parseIntoURI(String uri)
+D'une manière générale, le code comporte trop de commentaires. La longueur finale du fichier est doublée.
+Il y a aussi beaucoup de code inutile/code mort et de variables qui se répètent entre les différentes classes ce qui n'aide pas à la compréhension
+
+Ligne 408 - protected URI parseIntoURI(String uri)
 	// Methode trop longue (300 lignes)
 
-protected void setValue(String base, String path, boolean encode)
+Ligne 859 - protected void setValue(String base, String path, boolean encode)
 	// Methode trop longue (200 lignes)
 
-protected void setValue(String path)
+Ligne 1211 - protected void setValue(String path)
 	// Methode trop longue (200 lignes)
 
 
-protected URI intern(boolean isExclusive, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, int hashCode)
+Ligne 1968 - protected URI intern(boolean isExclusive, int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
+	// trop grand nombre d'argument
+	
+Ligne 1995 - protected URI intern(boolean isExclusive, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, int hashCode)
 	// trop grand nombre d'argument
 
-protected Hierarchical(int hashCode, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
+Ligne 3110 - protected Hierarchical(int hashCode, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
+	// trop grand nombre d'argument
+	
+Ligne 5631 - boolean matches(int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
 	// trop grand nombre d'argument
 
-
-stringArraySegmentsAndSubsegmentAccessUnit.setValue(hashCode, segments, segmentCount, segment, offset, count, segmentHashCode);
+Ligne 334 - stringArraySegmentsAndSubsegmentAccessUnit.setValue(hashCode, segments, segmentCount, segment, offset, count, segmentHashCode);
 	// variable trop longue
 	// trop d'argument
+	
+Lignes 350/351 - stringArraySegmentsAndSubsegmentAccessUnit
+	//Nom de variable trop long
+	
+Ligne 4874 - If the hash code is <code>0</code> then most likely we've got a pending lazy
+	//Commentaire étrange
+	
+Lignes 205 à 220
+	//Getter et setter qui lèvent des exceptions
+	
+Lignes 306 à 325
+	//Variables non explicites et commentaires superflux
+	
+Lignes 367 à 380
+	//Redondance du code de setValue
+	
+Lignes 653 et 2025
+	// for (;;)
+	
+Ligne 663
+	//break dans une boucle for
+	
+Lignes 778 à 854
+	//Nom de variable pas assez explicites
+	//Trop de commentaires inutiles
+	//Nom de variable static trop long
+	
+Lignes 1126 à 1194
+	//Nom de variable pas assez explicites
+	//Trop de commentaires inutiles
+	//Répétition de nom de variable avec d'autres précédemment utilisées
+	
+Lignes 2292 à 2305
+	//Reste de code / code mort
+	
+Lignes 2307 à 2715
+	Commentaires un peu trop verbeux
+	
+Lignes 2748 - protected static boolean validateURI(boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, String fragment)
+	// trop grand nombre d'argument
+	
+Lignes 2809 à 2816 et 2832 à 2838
+	//Reste de code / code mort
+	
+Ligne 2975
+	//Reste de code / code mort
+	
+Ligne 2984 - public static boolean validFragment(String value)
+	//Retourne true
+
+Ligne 2990
+	//Reste de code / code mort
+	
+Lignes 3237 - 4427 - 4652
+	//Retourne true
+	
+Lignes 4664
+	//Retourne false
+	
+Lignes 4997 à 5205
+	//Retourne false d'office
+	//Commentaires incohérents avec le code
+	//Reste de code / code mort / code en commentaire
+	//=>Code inutile
+	
+Lignes 5250 à 5311
+	//Retourne null d'office
+	//Commentaires incohérents avec le code
+	//=>Code inutile
+	
+Lignes 5320 et 5327
+	//Méthodes avec la même fonction
+	
+Ligne 5345
+	//Retourne 0 pour une fonction qui compte
+	
+Lignes 5362 à 5413
+	//Retourne null d'office
+	//Commentaires incohérents avec le code
+	//=>Code inutile
+
+Lignes 5624 à 5675 et 5740 à 5765 et 5790 à 5808
+	//Retourne null ou false d'office
+	//Commentaires incohérents avec le code
+	//=>Code inutile
+	
+Lignes 5860 et 5880
+	//Méthodes avec la même fonction
+	
+Lignes 5895 et 5911
+	//Méthodes avec la même fonction
+	
+Ligne 6016
+	//Méthode avec trop de conditionnelles
