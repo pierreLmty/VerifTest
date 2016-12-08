@@ -1,3 +1,7 @@
+Etape 1 : 
+
+-Relecture du code
+
 D'une manière générale, le code comporte trop de commentaires. La longueur finale du fichier est doublée.
 Il y a aussi beaucoup de code inutile/code mort et de variables qui se répètent entre les différentes classes ce qui n'aide pas à la compréhension
 
@@ -120,3 +124,28 @@ Lignes 5895 et 5911
 	
 Ligne 6016
 	//Méthode avec trop de conditionnelles
+
+	
+-Analyse avec PMD
+
+VIOLATION							LIGNE		ETAT
+Useless parentheses. 						2243		Corrigé
+Useless parentheses. 						2264		Corrigé
+Useless parentheses. 						2277            Corrigé
+Avoid empty catch blocks 					2876–2879	Corrigé
+Avoid unused constructor parameters such as 'hierarchical'. 	3110		Corrigé
+Avoid empty if statements 					3681–3683	Corrigé
+Avoid empty if statements 					3699–3701	Corrigé
+Useless parentheses. 						3743		Corrigé
+Useless parentheses. 						3745		Corrigé
+Useless parentheses. 						4039–4041	Corrigé
+Useless parentheses. 						4534–4536	Corrigé
+Useless parentheses. 						4884		Corrigé
+Ensure you override both equals() and hashCode() 		5232		Non corrigé
+Useless parentheses. 						5469		Corrigé
+Useless parentheses. 						5497		Corrigé
+Useless parentheses. 						5513		Corrigé
+Useless parentheses. 						6086		Corrigé
+
+Possibilité d'améliorations : 
+-Séparer l'ensemble des classes pour les mettre dans les fichiers différents (Amélioration de la lisibilité)
