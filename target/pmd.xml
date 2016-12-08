@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd version="5.5.1" timestamp="2016-12-08T02:20:09.068">
+<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/CommonUtil.java">
+<violation beginline="94" endline="98" begincolumn="5" endcolumn="5" rule="EmptyCatchBlock" ruleset="Empty Code" package="org.eclipse.emf.common.util" class="CommonUtil" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="1272" endline="1310" begincolumn="18" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1312" endline="1319" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1340" endline="1356" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1361" endline="1377" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1382" endline="1398" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1403" endline="1419" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1424" endline="1441" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="intern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+<violation beginline="1446" endline="1453" begincolumn="21" endcolumn="5" rule="UnnecessaryFinalModifier" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="CommonUtil$StringPool" method="javaIntern" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UnnecessaryFinalModifier" priority="3">
+Unnecessary final modifier in final class
+</violation>
+</file>
+<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/Pool.java">
+<violation beginline="1016" endline="1019" begincolumn="10" endcolumn="3" rule="UselessOverridingMethod" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="Pool" method="iterator" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessOverridingMethod" priority="3">
+Overriding method merely calls super
+</violation>
+</file>
+<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/SegmentSequence.java">
+<violation beginline="512" endline="512" begincolumn="14" endcolumn="23" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="org.eclipse.emf.common.util" class="SegmentSequence" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+<violation beginline="1933" endline="1933" begincolumn="25" endcolumn="53" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="SegmentSequence$SegmentSequencePool$AccessUnitBase" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="1938" endline="1938" begincolumn="25" endcolumn="73" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="SegmentSequence$SegmentSequencePool$AccessUnitBase" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="2487" endline="2487" begincolumn="23" endcolumn="51" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="SegmentSequence$SegmentSequencePool$SegmentsAndSegmentsAccessUnit" method="setValue" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/URI.java">
+<violation beginline="2243" endline="2243" begincolumn="20" endcolumn="26" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="lowBitmask" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="2264" endline="2264" begincolumn="30" endcolumn="36" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="lowBitmask" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="2277" endline="2277" begincolumn="42" endcolumn="55" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="highBitmask" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="2876" endline="2879" begincolumn="7" endcolumn="7" rule="EmptyCatchBlock" ruleset="Empty Code" package="org.eclipse.emf.common.util" class="URI" method="validArchiveAuthority" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/empty.html#EmptyCatchBlock" priority="3">
+Avoid empty catch blocks
+</violation>
+<violation beginline="3110" endline="3110" begincolumn="50" endcolumn="61" rule="UnusedFormalParameter" ruleset="Unused Code" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="Hierarchical" variable="hierarchical" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'hierarchical'.
+</violation>
+<violation beginline="3681" endline="3683" begincolumn="13" endcolumn="13" rule="EmptyIfStmt" ruleset="Empty Code" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="deresolve" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/empty.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="3699" endline="3701" begincolumn="13" endcolumn="13" rule="EmptyIfStmt" ruleset="Empty Code" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="deresolve" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/empty.html#EmptyIfStmt" priority="3">
+Avoid empty if statements
+</violation>
+<violation beginline="3743" endline="3743" begincolumn="14" endcolumn="52" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="hasCollapsableSegments" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="3745" endline="3745" begincolumn="70" endcolumn="112" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="hasCollapsableSegments" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="4039" endline="4041" begincolumn="12" endcolumn="179" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$Hierarchical" method="matches" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="4534" endline="4536" begincolumn="12" endcolumn="78" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$Opaque" method="matches" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="4884" endline="4884" begincolumn="22" endcolumn="38" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$Fragment" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="5232" endline="5232" begincolumn="14" endcolumn="23" rule="OverrideBothEqualsAndHashcode" ruleset="Basic" package="org.eclipse.emf.common.util" class="URI" method="hashCode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/basic.html#OverrideBothEqualsAndHashcode" priority="3">
+Ensure you override both equals() and hashCode()
+</violation>
+<violation beginline="5469" endline="5469" begincolumn="26" endcolumn="46" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI$LazyFragmentInitializer" method="clear" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="5497" endline="5497" begincolumn="26" endcolumn="43" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="appendFragment" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="5513" endline="5513" begincolumn="24" endcolumn="41" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="rawAppendFragment" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+<violation beginline="6086" endline="6086" begincolumn="43" endcolumn="133" rule="UselessParentheses" ruleset="Unnecessary" package="org.eclipse.emf.common.util" class="URI" method="decode" externalInfoUrl="https://pmd.github.io/pmd-5.5.1/pmd-java/rules/java/unnecessary.html#UselessParentheses" priority="4">
+Useless parentheses.
+</violation>
+</file>
+</pmd>
