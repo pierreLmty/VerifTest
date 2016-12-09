@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="6.11.2">
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/CommonUtil.java">
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/CommonUtil.java">
 <error line="0" severity="error" message="Missing package-info.java file." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
 <error line="12" column="8" severity="error" message="Unused import - java.lang.ref.WeakReference." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
 <error line="21" severity="error" message="Line is longer than 80 characters (found 125)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -684,7 +684,16 @@
 <error line="1548" column="3" severity="error" message="&apos;{&apos; at column 3 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="1549" column="26" severity="error" message="Avoid inline conditionals." source="com.puppycrawl.tools.checkstyle.checks.coding.AvoidInlineConditionalsCheck"/>
 </file>
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/Pool.java">
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/InterningSet.java">
+<error line="13" severity="error" message="Line is longer than 80 characters (found 83)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="17" severity="error" message="Type Javadoc comment is missing an @param &lt;E&gt; tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
+<error line="18" column="1" severity="error" message="&apos;{&apos; at column 1 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
+<error line="20" severity="error" message="Line is longer than 80 characters (found 141)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="22" severity="error" message="Line is longer than 80 characters (found 187)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="27" severity="error" message="Line is longer than 80 characters (found 149)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="29" severity="error" message="Line is longer than 80 characters (found 144)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/Pool.java">
 <error line="16" column="8" severity="error" message="Unused import - java.util.concurrent.locks.ReadWriteLock." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
 <error line="20" severity="error" message="Line is longer than 80 characters (found 152)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="21" severity="error" message="Line is longer than 80 characters (found 130)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -1174,7 +1183,7 @@
 <error line="1198" column="5" severity="error" message="&apos;}&apos; at column 5 should be on the same line as the next part of a multi-block statement." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
 <error line="1200" column="5" severity="error" message="&apos;{&apos; at column 5 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/SegmentSequence.java">
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/SegmentSequence.java">
 <error line="0" severity="error" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
 <error line="1" severity="error" message="File length is 3,004 lines (max allowed is 2,000)." source="com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck"/>
 <error line="21" severity="error" message="Line is longer than 80 characters (found 81)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -2637,16 +2646,7 @@
 <error line="3000" column="58" severity="error" message="Expected @param tag for &apos;capacity&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="3001" column="3" severity="error" message="&apos;{&apos; at column 3 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 </file>
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/InterningSet.java">
-<error line="13" severity="error" message="Line is longer than 80 characters (found 83)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="17" severity="error" message="Type Javadoc comment is missing an @param &lt;E&gt; tag." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
-<error line="18" column="1" severity="error" message="&apos;{&apos; at column 1 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
-<error line="20" severity="error" message="Line is longer than 80 characters (found 141)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="22" severity="error" message="Line is longer than 80 characters (found 187)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="27" severity="error" message="Line is longer than 80 characters (found 149)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="29" severity="error" message="Line is longer than 80 characters (found 144)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-</file>
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/URI.java">
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/URI.java">
 <error line="1" severity="error" message="File length is 6,150 lines (max allowed is 2,000)." source="com.puppycrawl.tools.checkstyle.checks.sizes.FileLengthCheck"/>
 <error line="47" column="7" severity="error" message="Unclosed HTML tag found: &lt;a name=&quot;device_explanation&quot;&gt;" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocStyleCheck"/>
 <error line="73" severity="error" message="Line is longer than 80 characters (found 85)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
@@ -4947,7 +4947,7 @@
 <error line="6144" column="5" severity="error" message="&apos;{&apos; at column 5 should be on the previous line." source="com.puppycrawl.tools.checkstyle.checks.blocks.LeftCurlyCheck"/>
 <error line="6145" column="31" severity="error" message="&apos;10&apos; is a magic number." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
 </file>
-<file name="/home/pierre/Documents/VT/VerifTest/src/main/java/org/eclipse/emf/common/util/WeakInterningHashSet.java">
+<file name="/comptes/E133501K/Documents/M1/Test/VerifTest/src/main/java/org/eclipse/emf/common/util/WeakInterningHashSet.java">
 <error line="23" column="8" severity="error" message="Unused import - java.util.WeakHashMap." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
 <error line="26" severity="error" message="Line is longer than 80 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="27" severity="error" message="Line is longer than 80 characters (found 104)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
