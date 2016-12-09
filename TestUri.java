@@ -168,16 +168,61 @@ public void testcreateHierarchicalURI3()
 	assertEquals(result,POOL.intern(false, URIPool.URIComponentsAccessUnit.VALIDATE_ALL, true, scheme, authority, device, true, segments, query).appendFragment(fragment));
 }
 
-//createURI(String uri)
+//test createURI(String uri)
 @test
 public void testcreateURI()
 {
 	
 }
+//test createURI(String uri, boolean ignoreEscaped)
 
+//test createURI(String uri, boolean ignoreEscaped, int fragmentLocationStyle)
 
+//test createDeviceURI(String uri)
 
+//test createURIWithCache(String uri)
 
+//test createFileURI(String pathName)
+
+//test createPlatformResourceURI(String pathName)
+
+//test createPlatformResourceURI(String pathName, boolean encode)
+
+//test createPlatformPluginURI(String pathName, boolean encode)
+
+//test constructeur URI(int hashCode)
+
+//test validateURI(boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, String fragment)
+
+//test validScheme(String value)
+
+//test validOpaquePart(String value)
+
+//test validAuthority(String value)
+
+//test validArchiveAuthority(String value)
+
+//test validJarAuthority(String value)
+
+//test validDevice(String value)
+
+//test validSegment(String value)
+
+//test validSegments(String[] value)
+
+//test firstInvalidSegment(String[] value)
+
+//test validQuery(String value)
+
+//test validFragment(String value)
+
+//test contains(String s, long highBitmask, long lowBitmask)
+
+//test flushCachedString() //donothing
+
+//test cacheString(String string) //donothing
+
+//test getCachedString() //return null
 
 
 
