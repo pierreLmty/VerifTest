@@ -2447,7 +2447,7 @@ public abstract class URI
 
   /**
    * Static factory method that encodes and parses the given URI string.
-   * Appropriate encoding is performed for each component of the URI.
+   * Appropriate encoding is performed for each component of the UvalidSchemeRI.
    * If more than one <code>#</code> is in the string, the last one is
    * assumed to be the fragment's separator, and any others are encoded.
    * This method is the simplest way to safely parse an arbitrary URI string.

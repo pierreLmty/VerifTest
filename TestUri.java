@@ -172,8 +172,20 @@ public void testcreateHierarchicalURI3()
 @test
 public void testcreateURI()
 {
-	
+	assert(???? createURI(null));
 }
+
+@test(expected=IllegalArgumentException)
+public void testcreateURI()
+{
+	createURI("valide" + MAJOR_SEPARATOR_HI + "valid");
+}
+@test(expected=IllegalArgumentException)
+public void testcreateURI()
+{
+	createURI("valide" + MAJOR_SEPARATOR_LO + "valid");
+}
+
 //test createURI(String uri, boolean ignoreEscaped)
 
 //test createURI(String uri, boolean ignoreEscaped, int fragmentLocationStyle)
@@ -191,6 +203,9 @@ public void testcreateURI()
 //test createPlatformPluginURI(String pathName, boolean encode)
 
 //test constructeur URI(int hashCode)
+
+
+
 
 //test validateURI(boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, String fragment)
 
