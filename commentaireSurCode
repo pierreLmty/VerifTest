@@ -42,8 +42,8 @@ Lignes 306 à 325
 Lignes 367 à 380
 	//Redondance du code de setValue
 	
-Lignes 653 et 2025
-	// for (;;)
+Lignes 653 et 2025 - for(;;)
+	// for avec une exécution infinie. A remplacer avec une boucle while
 	
 Ligne 663
 	//break dans une boucle for
@@ -84,6 +84,9 @@ Lignes 3237 - 4427 - 4652
 	
 Lignes 4664
 	//Retourne false
+	
+Lignes 4982 à 4995
+	//Méthode inutiles
 	
 Lignes 4997 à 5205
 	//Retourne false d'office
