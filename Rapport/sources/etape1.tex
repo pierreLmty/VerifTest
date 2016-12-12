@@ -2,24 +2,29 @@
 	\subsection{Relecture du code}
 		D'une manière générale, le code comporte trop de commentaires. La longueur finale du fichier est doublée.
 		
-		Il y a aussi beaucoup de code inutile/mort et de variable qui se répètent entre les différentes classes, ce qui n'aide pas à la compréhension.
+		Il y a aussi beaucoup de code inutile/mort et de variables qui se répètent entre les différentes classes, ce qui n'aide pas à la compréhension.
 
-		Ligne 408 - protected URI parseURI(String uri)
+		Ligne 408 -- \texttt{protected URI parseURI(String uri)}\\
 		Méthode trop longue (300 lignes)
+		
 
-		Ligne 859 - protected void setValue(String base, String path, boolean encode)
+		Ligne 859 -- \texttt{protected void setValue(String base, String path, boolean encode)}\\
 		Méthode trop longue (200 lignes)
+		
 
-		ligne 1211 - protected void setValue(String path)
+		ligne 1211 -- \texttt{protected void setValue(String path)}\\
 		Méthode trop longue (200 lignes)
+		
 
-		Ligne 1968 - protected URI intern(boolean isExclusive, int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, int hashCode)
+		Ligne 1968 -- \texttt{protected URI intern(boolean isExclusive, int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query, int hashCode)}\\
 		Trop grand nombre d'argument
+		
 
-		Ligne 3110 - protected Hierarchical(int hashCode, boolean hierachical, String scheme, String authority, String device, boolean absolutePath, String[] segmentsn, String query)
+		Ligne 3110 -- \texttt{protected Hierarchical(int hashCode, boolean hierachical, String scheme, String authority, String device, boolean absolutePath, String[] segmentsn, String query)}\\
 		Trop grand nombre d'argument
+		
 
-		Ligne 5631 - boolean matches(int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)
+		Ligne 5631 -- \texttt{boolean matches(int validate, boolean hierarchical, String scheme, String authority, String device, boolean absolutePath, String[] segments, String query)}\\
 		Trop grand nombre d'argument
 
 		[ajouter page 2 et 3]
@@ -28,13 +33,29 @@
 
 		
 	\subsection{Analyse avec \textsc{pmd}}
-		Si on prend en compte le résultat de \textsc{pmd} qui se trouve ci-dessous, on remarque qu'avec la configuration de base du plugin \textsc{pmd}, la majorité des erreurs concernent des parenthèses ou de conditions vides. Pour affiner l'analyse du code, il aurait fallu ajouter quelques configurations comme on a pus le faire lors du TP sur l'analyse statique avec l'ajout de règles de nommage. Si lon considère la taille du fichier, qui est de plus de 6000 lignes, le fait que moins de 20 problèmes aient été trouvés montre bien que l'analyse n'est pas complete et qu'il faut ajouter de nouveaux plugins à Maven.
+		Si on prend en compte le résultat de \textsc{pmd} qui se trouve ci-dessous, on remarque qu'avec la configuration de base du plugin \textsc{pmd}, la majorité des erreurs concernent des parenthèses ou de conditions vides. Pour affiner l'analyse du code, il aurait fallu ajouter quelques configurations comme on a pu le faire lors du TP sur l'analyse statique avec l'ajout de règles de nommage. Si lon considère la taille du fichier, qui est de plus de 6000 lignes, le fait que moins de 20 problèmes aient été trouvés montre bien que l'analyse n'est pas complete et qu'il faut ajouter de nouveaux plugins à Maven.
+
+		\begin{tabular}{ll}
+            Useless parentheses &  2243\\
+            Useless parentheses &  2264\\
+            Useless parentheses &  2277\\
+            Avoid empty catch blocks &  2876--2879\\
+            Avoid unused constructor parameters such as \emph{hierarchical} & 3110\\
+            Useless empty if statements &  3681--3683\\
+            Useless empty if statements &  3699--3701\\
+            Useless parentheses &  3743\\
+            Useless parentheses &  3745\\
+            Useless parentheses &  4039--4041\\
+            Useless parentheses &  4534--4536\\
+            Useless parentheses &  4884\\
+            Ensure you override both \texttt{equals()} and \texttt{hashCode()} & 5232\\
+            Useless parentheses &  5469\\
+            Useless parentheses &  5497\\
+            Useless parentheses &  5513\\
+            Useless parentheses &  6086\\
+        \end{tabular}
 
 		L'archive du site est disponnible dans le fichier \og \verb#site-pmd.tar.gz# \fg
-
-		[ajouter tableau qui est sur sharelatex]
-
-
 
 	\subsection{Analyse avec Findbug et CheckStyle}
 		% L'archive du site est disponnible dans le fichier \og \verb#site-checkstyle+finbug.tar.gz# \fg
@@ -43,19 +64,19 @@
 
 			POur les autres erreurs du rapport, onretrouve beaucoup de fois les mêmes :
 			\begin{itemize}
-				\item LineLength qui oblige la ligne à avoir une longueur inférieur à 80 caractères;
+				\item LineLength qui oblige la ligne à avoir une longueur inférieure à 80 caractères;
 				\item LeftCurly qui oblige les accolades ouvrantes à être au même niveau que le nom de la méthode classe. Comme spécifié dans les conventions de codage Sun;
-				\item VisibilityModifier qui spécifie qu'un attribut doit être privée et avoir des accesseurs;
-				\item JavadocMethod qui s'occupe du formatage de la JavaDoc
-				\item MagicNumber qui nous signale les valeurs mise en dur dans le code;
-				\item FinalParameters qui indique que certaine variable doivent être \verb+final+;
+				\item VisibilityModifier qui spécifie qu'un attribut doit être privé et avoir des accesseurs;
+				\item JavadocMethod qui s'occupe du formatage de la JavaDoc;
+				\item MagicNumber qui nous signale les valeurs mises en dur dans le code;
+				\item FinalParameters qui indique que certaines variables doivent être \verb+final+;
 				\item DesignForExtension indique qu'une métode doit être abstraite ou finale;
-				\item RightCurly qui est le pendant de LeftCurly pour les accolades fermante;
+				\item RightCurly qui est le pendant de LeftCurly pour les accolades fermante.
 			\end{itemize}
 
-			Les erreurs précédemment citées font parties des plus récurrentes parmis celles signalées par CheckStyle. ON aurrait pu également ajouter \emph{WhiteSpaceAfter}, \emph{HiddenField}, ou encore \emph{InnerAssignement}.
+			Les erreurs précédemment citées font partie des plus récurrentes mais on aurait pu également citer \emph{WhiteSpaceAfter}, \emph{HiddenField}, ou encore \emph{InnerAssignement}.
 
-			Avec ce nouveau plugin, on voit bien bien que d'avantage d'erreurs sont présente dans ce code, en plus de celles signalées par \textsc{pmd}. CheckStyle signale en effet ici 2299 erreurs dans la classe URI. Il ne faut pas oublier que parmis ces erreur, certaines corresponde à des convention de style du code source, conventions qui diffères d'une société à l'autre.
+			Avec ce nouveau plugin, on voit bien que d'avantage d'erreurs sont présentes dans ce code, en plus de celles signalées par \textsc{pmd}. CheckStyle signale en effet ici 2299 erreurs dans la classe URI. Il ne faut pas oublier que parmi ces erreurs, certaines correspondent à des conventions de style du code source, conventions qui diffèrent d'une société à l'autre.
 
 		\subsubsection{FindBugs}
 			De son côté, FindBugs répertorie principalement deux catégories:
@@ -64,17 +85,17 @@
 				\item le code malicieux.
 			\end{itemize}
 
-			Pour les mauvaise pratique, Findbugs conseil d'utiliser la méthode \verb+equals()+ au lieu des opérateurs \verb+==+ et \verb+!=+.
+			Pour les mauvaises pratiques, Findbugs conseil d'utiliser la méthode \verb+equals()+ au lieu des opérateurs \verb+==+ et \verb+!=+.
 
-			Pour le code malicieu, FindBugs indique que des variables devraint se trouver dans des packages protégés, pour éviter qu'elle soient changé par accident ou par du code malicieu
+			Pour le code malicieux, FindBugs indique que des variables devraient se trouver dans des packages protégés, pour éviter qu'elles soient changées par accident ou par du code malicieux
 
-			POur ce plugin, le nombre d'erreurs relevées est bien moins importants que pour CheckStyle, mais il reste quand même intéressant à utiliser. En effet, FindBugs se focalise sur la sécurité du code et  non plus sur son style comme le fait CheckStyle.
+			Pour ce plugin, le nombre d'erreurs relevées est bien moins important que pour CheckStyle, mais il reste quand même intéressant à utiliser. En effet, FindBugs se focalise sur la sécurité du code et non plus sur son style comme le fait CheckStyle.
 
 	\subsection{Améliorations possibles}
-		On peut séparer les classe pour les mettre dans des fichiers différents quand cela est nécessaire pour obtenir une amélioration de la lisibilité du code.
+		On peut séparer les classes pour les mettre dans des fichiers différents quand cela est nécessaire pour obtenir une amélioration de la lisibilité du code.
 
-		Pour les méthodes avec trop de paramètres, ont peut voir s'il est possible de les rassembler dans une nouvelle classe.
+		Pour les méthodes avec trop de paramètres, on peut voir s'il est possible de les rassembler dans une nouvelle classe.
 
 		Diminuer le risque d'introduire des bug en applicant les conseils de FindBugs.
 
-		Trouver une logique dans les nombre magique et les remplasser par des constantes.
+		Trouver une logique dans les nombres magiques et les remplasser par des constantes.
